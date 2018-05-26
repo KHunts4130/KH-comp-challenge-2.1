@@ -1,0 +1,109 @@
+html,
+body {
+  background-color: #EFEFEF;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  border-style: border-box;
+}
+
+header {
+  height: 12.4rem;
+  display: flex;
+  background-color: #2F2F2F;
+}
+
+h3 {
+  margin-left: 4rem;
+  font-size: 4rem;
+}
+
+.shares {
+  color: #4D4D4D;
+  height: 8rem;
+  /*background-color: #EFEFEF;*/
+}
+
+.grid-wrapper {
+  background-color: #EFEFEF;
+  display: grid;
+  margin: 0 4rem;
+  grid-gap: 1.1rem;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-auto-rows: minmax(44rem, auto);
+  grid-template-areas: 
+    "card-one card-two card-three card-four"
+    "card-five card-six card-seven card-eight";
+}
+
+.new-card-area {
+  background-color: #EFEFEF;
+  height: 65rem;
+}
+
+.card-to-hide {
+  display: none;
+}
+
+.the-card {
+  font-size: 1.8rem;
+  /*display: flex;*/
+  margin-bottom: .3rem;
+  background-color: #FFF;
+  box-shadow: 0px 2px 2px 2px #ccc;
+  
+}
+
+.card-top {
+  width: 100%;
+  color: #FFFFFF;
+  height: 18rem;
+  /*display: flex;*/
+  justify-content: space-between;
+  /*background-color: red;*/
+  background-image: url(images/perry-Mervar.jpg);
+}
+
+.icons {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding-left: .5rem;
+}
+
+.url-box {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 85%;
+  height: 4.5rem;
+  background-color: #EEEFEF;
+  color: #838383;
+
+}
+
+.url {
+  width: 100%;
+  
+}
+
+
+
+
+
+
+
+.legend-status {
+
+}
+
+
+
+
+
+
+
+
