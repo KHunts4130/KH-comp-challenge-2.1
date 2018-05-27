@@ -3,7 +3,7 @@ body {
   background-color: #EFEFEF;
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
-  border-style: border-box;
+  /*border-style: border-box;*/
 }
 
 header {
@@ -15,6 +15,7 @@ h3 {
   margin-left: 4rem;
   font-size: 4rem;
 }
+ /*Header area*/
 
 .top-header {
   height: 5.6rem;
@@ -38,11 +39,6 @@ h3 {
   margin-top: .6rem;
   
 }
-
-.admin-button-container {
- 
-}
-
 
 .admin-button {
   margin-top: 1rem;
@@ -133,6 +129,8 @@ button:hover {
   height: 8rem;
 }
 
+ /*lower card area*/
+
 .grid-wrapper {
   background-color: #EFEFEF;
   display: grid;
@@ -166,13 +164,18 @@ button:hover {
 .card-top {
   background-blend-mode: multiply;
   background-color: #9e9e9e;
-  background-position: top;
+  /*background-position: top;*/
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   width: 100%;
   color: #FFFFFF;
   height: 18rem;
   background-image: url(images/perry-Mervar.jpg);
+}
+
+.card-top-two {
+  background-position: 0 -2.2rem;
+  background-image: url(images/jackie-with-medals.jpg);
 }
 
 .card-top:hover {
@@ -199,17 +202,33 @@ button:hover {
   justify-content: space-between;
 }
 
+/*card information*/
+
 .card-body {
   padding-left: 1.5rem;
+  padding-right: .8rem;
+}
+
+.name {
+  margin-top: .7rem;
+  margin-bottom: 0;
+}
+
+.date-time {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #AAAAAA;
 }
 
 .url-box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-style: border-box;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding-right: .2rem;
-  padding-left: .2rem;
+  /*margin: 0 auto;*/
+  /*padding-right: .2rem;*/
+  /*padding-left: .2rem;*/
   width: 95%;
   height: 4.5rem;
   background-color: #EEEFEF;
@@ -224,11 +243,29 @@ button:hover {
   
 }
 
-
 .legend-status {
-
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .3rem;
 }
 
+.legend-from {
+  margin-top: .2rem;
+}
+
+.known-for {
+  margin-bottom: .3rem;
+  font-size: 1.5rem;
+}
+
+.more-info {
+  margin-top: .4rem;
+}
+
+
+.attachments {
+  font-size: 1.5rem;
+}
 
 .attachment-number {
   color: #35B6FA;
@@ -269,6 +306,31 @@ button:hover {
       "card-seven card-eight";
   }
 
+  .nav-bar {
+    margin-left: 4.1rem;
+    width: 40%;
+  }
+
+  .icon-share {
+    display: none;
+  }
+
+  .play-list {
+    color: transparent;
+  }
+
+  .play-list img {
+    height: 6rem;
+  }
+
+  .videos {
+    display: none;
+  }
+
+  .title {
+    margin-right: 18rem;
+  }
+
   .card-nine {
     display: none;
   }
@@ -298,6 +360,13 @@ button:hover {
     display: none;
   }
 
+  .bottom-header {
+    display: relative;
+  }
+
+  .play-list img {
+    margin-top: 0;
+  }
 }
 
 
