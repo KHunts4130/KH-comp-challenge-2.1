@@ -8,7 +8,6 @@ body {
 
 header {
   height: 12.4rem;
-  display: flex;
   background-color: #2F2F2F;
 }
 
@@ -17,10 +16,88 @@ h3 {
   font-size: 4rem;
 }
 
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  /*background-color: red;*/
+}
+
+
+.admin-username {
+  margin-right: 2rem;
+  margin-top: .2rem;
+  color: #35B6FA;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  /*background-color: #FFFFFF;*/
+}
+
+.admin-username img {
+  
+}
+
+.admin-button {
+  margin-top: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 4px solid #35B6FA;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.nav-bar {
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  width: 40%;
+  display: flex;
+  /*justify-content: space-between;*/
+  color: #FFFFFF;
+}
+
+.icon-share {
+  display: flex;
+  margin-left: 2rem;
+  width: 25%;
+  margin-right: 1rem;
+}
+
+.play-list {
+  display: flex;
+  width: 25%;
+  margin-right: 1rem;
+}
+
+.videos {
+  display: flex;
+  width: 25%;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1rem;
+  display: flex;
+  color: #FFFFFF;
+}
+
+.title img {
+  margin-top: 3rem;
+  margin-left: .6rem;
+  margin-right: 2.5rem;
+}
+
+
 .shares {
   color: #4D4D4D;
   height: 8rem;
-  /*background-color: #EFEFEF;*/
 }
 
 .grid-wrapper {
@@ -28,7 +105,7 @@ h3 {
   display: grid;
   margin: 0 4rem;
   grid-gap: 1.1rem;
-  grid-template-columns:  repeat(4, 1fr);
+  grid-template-columns:  repeat(4, 25%);
   grid-auto-rows: minmax(44rem, auto);
   grid-template-areas: 
     "card-one card-two card-three card-four"
@@ -46,9 +123,9 @@ h3 {
 
 .the-card {
   font-size: 1.8rem;
-  /*display: flex;*/
   margin-bottom: .3rem;
-  background-color: #FFF;
+  padding: 0 .3rem 0 .3rem;
+  background-color: #FFFFFF;
   box-shadow: 0px 2px 2px 2px #ccc;
   
 }
@@ -57,9 +134,6 @@ h3 {
   width: 100%;
   color: #FFFFFF;
   height: 18rem;
-  /*display: flex;*/
-  justify-content: space-between;
-  /*background-color: red;*/
   background-image: url(images/perry-Mervar.jpg);
 }
 
@@ -71,14 +145,17 @@ h3 {
 }
 
 .card-body {
-  padding-left: .5rem;
+  padding-left: 1.5rem;
 }
 
 .url-box {
+  border-style: border-box;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 85%;
+  padding-right: .2rem;
+  padding-left: .2rem;
+  width: 95%;
   height: 4.5rem;
   background-color: #EEEFEF;
   color: #838383;
@@ -86,14 +163,11 @@ h3 {
 }
 
 .url {
-  width: 100%;
+
+  font-size: 88%;
+  margin: 10px auto;
   
 }
-
-
-
-
-
 
 
 .legend-status {
@@ -101,9 +175,100 @@ h3 {
 }
 
 
+.attachment-number {
+  color: #35B6FA;
+  font-size: 3rem;
+}
+
+
+@media screen and (max-width: 1115px) {
+  .card-top {
+    background-position: -35px 0;
+  }
 
 
 
+
+
+
+
+}
+
+
+@media screen and (max-width: 970px) {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns:  repeat(3, 33%);
+    grid-auto-rows: minmax(38rem, auto);
+    grid-template-areas: 
+      "card-one card-two card-three"
+      "card-four card-five card-six"
+      "card-seven card-eight card-nine";
+  }
+
+  .card-top {
+    background-position: -35px 0;
+  }
+
+  .login-top {
+    background-image: url(images/your-picture.png);
+  }
+
+  .card-nine {
+    display: initial;
+  }
+
+
+}
+
+@media screen and (max-width: 830px) {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns:  repeat(2, 50%);
+    grid-auto-rows: minmax(35rem, auto);
+    grid-template-areas: 
+      "card-one card-two"
+      "card-three card-four"
+      "card-five card-six"
+      "card-seven card-eight";
+  }
+
+  .card-nine {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns:  repeat(1, 100%);
+    grid-auto-rows: 30rem;
+    /*grid-auto-rows: minmax(35rem, auto);*/
+    grid-template-areas: 
+      "card-one"
+      "card-two"
+      "card-three"
+      "card-four"
+      "card-five"
+      "card-six"
+      "card-seven"
+      "card-eight";
+  }
+    
+  .legend-status,
+  .more-info,
+  .attachment-box,
+  .attachment-number {
+    display: none;
+  }
+
+
+
+  .card-top {
+    background-position: 20px 0;
+  }
+
+}
 
 
 
