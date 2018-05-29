@@ -1,21 +1,28 @@
 html,
 body {
   background-color: #EFEFEF;
-  font-size: 62.5%;
+  border-style: border-box;
   font-family: 'Open Sans', sans-serif;
-  /*border-style: border-box;*/
+  font-size: 62.5%;
 }
 
 header {
-  height: 16.3rem;
   background-color: #2F2F2F;
+  height: 16.3rem;
 }
 
 h3 {
-  margin-left: 4rem;
   font-size: 4rem;
+  margin-left: 3rem;
 }
- /*Header area*/
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+/*Header area*/
 
 .top-header {
   height: 5.6rem;
@@ -23,31 +30,24 @@ h3 {
   justify-content: flex-end;
 }
 
-
 .admin-username {
-  margin-right: 2rem;
-  margin-top: .2rem;
   color: #35B6FA;
-  font-size: 1.2rem;
   display: flex;
+  font-size: 1.2rem;
   justify-content: space-between;
-  width: 200px;
+  margin: .2rem 3.5rem 0 0;
+  width: 165px;
 }
 
 .admin-username img {
-  margin-left: 1rem;
-  margin-top: .6rem;
-  
+  margin: .6rem 0 0 1rem;
 }
 
 .admin-button {
-  margin-top: 1rem;
-  height: 15px;
   background-image: url(images/icon-sort-down-48.png);
-  background-repeat: no-repeat;
   background-position: -.4rem -.4rem;
-  background-color: transparent;
-  border: 0 solid transparent;
+  height: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 button:hover {
@@ -57,91 +57,96 @@ button:hover {
 .bottom-header {
   display: flex;
   justify-content: space-between;
-
 }
-
 
 .nav-bar {
-  margin-top: 3rem;
+  color: #f7f4e9 ;
+  display: flex;
   font-size: 1.7rem;
-  width: 40%;
-  display: flex;
-  color: #FFFFFF;
+  margin-top: 3rem;
 }
 
-.icon-share {
+.share-icon {
   display: flex;
-  margin-left: 2.9rem;
-  width: 25%;
-  margin-right: 2rem;
+  margin: 0 2rem 0 2.9rem;
 }
 
-.icon-share img {
-  margin-left: 1.5rem;
-  margin-top: 1.3rem;
+.share-icon-button {
+  background-image: url(images/icon-share-filled-50.png);
+  background-position: .4rem .4rem;
+  background-size: 2.5rem 2.5rem;
+  height: 3.5rem;
   margin-right: 1.3rem;
+  margin-top: .6rem;
+  width: 3.5rem;
 }
 
 .play-list {
   color: #939393;
   display: flex;
-  justify-content: center;
-  width: 25%;
-  margin-right: 2rem;
 }
 
-.play-list img {
-  margin-top: .9rem;
-  margin-right: 1.5rem;
+.play-list p {
+  color: #939393;
+  margin-left: 1rem;
+}
+
+.play-list-button {
+  background-image: url(images/icons-menu-40.png);
+  background-size: 3.5rem 3.5rem;
+  height: 3.5rem;
+  margin: .5rem 1.1rem 0 0;
+  width: 3.5rem;
 }
 
 .videos {
   color: #939393;
   display: flex;
-  width: 25%;
   margin-left: 3.1rem;
 }
 
-.videos img {
-  margin-top: .5rem;
-  margin-right: 1.1rem;
+.video-button {
+  background-image: url(images/icon-video-50.png);
+  background-size: 3.5rem 3.5rem;
+  height: 3.5rem;
+  margin: .2rem 1.1rem 0 0;
+  width: 3.5rem;
 }
 
 .title {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 5rem;
-  line-height: 1rem;
+  color: #f7f4e9;
   display: flex;
-  color: #FFFFFF;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 7rem;
+  line-height: 1rem;
 }
 
 .title img {
-  margin-top: .9rem;
-  margin-left: .8rem;
-  margin-right: 2.5rem;
+  margin: .9rem 3rem 0 .8rem;
 }
- .title p {
+
+.title p {
   margin-top: 3.8rem;
- }
+}
 
 .shares {
   color: #4D4D4D;
   height: 8rem;
 }
 
- /*lower card area*/
+ /*lower area where cards are*/
 
 .grid-wrapper {
   background-color: #EFEFEF;
   display: grid;
-  padding-right: 3rem;
-  margin: 0 3rem;
   grid-gap: 1.1rem;
   grid-template-columns:  repeat(4, 25%);
   grid-auto-rows: minmax(44rem, auto);
   grid-template-areas: 
     "card-one card-two card-three card-four"
     "card-five card-six card-seven card-eight";
+  margin: 0 3rem;
+  padding-right: 3rem;
 }
 
 .new-card-area {
@@ -154,99 +159,124 @@ button:hover {
 }
 
 .the-card {
-  font-size: 1.8rem;
-  margin-bottom: .3rem;
-  padding: 0 .3rem 0 .3rem;
   background-color: #FFFFFF;
   box-shadow: 0 .2rem .2rem .2rem #CCCCCC;
+  font-size: 1.8rem;
+  margin-bottom: .3rem;
 }
 
 .card-top {
   background-blend-mode: multiply;
   background-color: #9e9e9e;
-  /*background-position: top;*/
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  width: 100%;
-  color: #FFFFFF;
+  background-size: cover;
+  color: #f7f4e9;
   height: 18rem;
-  background-image: url(images/perry-Mervar.jpg);
-}
-
-.card-top-two {
-  background-position: 0 -2.2rem;
-  background-image: url(images/jackie-with-medals.jpg);
+  padding: 0;
+  width: 100%;
 }
 
 .card-top:hover {
   background-blend-mode: normal;
 }
 
+.card-top-one {
+  background-image: url(images/Jim_Thorpe.jpg);
+}
+
+.card-top-two {
+  background-image: url(images/grace-hopper.jpg)
+}
+
+.card-top-three {
+  background-image: url(images/Georges-St-Pierre.jpg);
+}
+
+.card-top-four {
+  background-image: url(images/billy-jean.jpg)
+}
+
+.card-top-five {
+  background-image: url(images/steve-jobs.jpg)
+}
+
+.card-top-six {
+  background-image: url(images/jackie-with-medals.jpg);
+}
+
+.card-top-six:hover {
+  color: #35B6FA;
+}
+
+.card-top-seven {
+  background-image: url(images/alan-turing.jpg)
+}
+
+.card-top-eight {
+  background-image: url(images/perry-Mervar.jpg)
+}
+
+
 .arrow-button {
-  /*border: none;*/
-  outline: none;
-  margin-top: .4rem;
+  background-image: url(images/icon-arrow-50.png);
+  background-position: .2rem -1rem;
   border-radius: 50%;
   height: 7rem;
+  margin-top: .4rem;
   width: 7rem;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-image: url(images/icon-arrow-50.png);
-  background-position: 2px -1rem;
 }
 
 .icons {
-  margin: 0 auto;
-  width: 85%;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.view-amount {
+  font-size: 3rem;
+  margin: -1.5rem 0 0 .8rem;
 }
 
 /*card information*/
 
 .card-body {
-  padding-left: 1.5rem;
-  padding-right: .8rem;
+  padding: 0 .8rem 0 1.5rem;
 }
 
 .name {
-  margin-top: .7rem;
-  margin-bottom: 0;
+  margin: .7rem 0 0 0;
 }
 
 .date-time {
-  margin-top: 1rem;
-  font-size: 1.5rem;
   color: #AAAAAA;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 .url-box {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border-style: border-box;
-  display: flex;
-  justify-content: center;
-  /*margin: 0 auto;*/
-  /*padding-right: .2rem;*/
-  /*padding-left: .2rem;*/
-  width: 95%;
-  height: 4.5rem;
   background-color: #EEEFEF;
+  border-style: border-box;
   color: #838383;
-
+  display: flex;
+  height: 4.5rem;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 95%;
 }
 
 .url {
-
-  font-size: 88%;
-  margin: 10px auto;
-  
+  color: #939393;
+  font-size: 97%;
+  margin: 1rem auto;
 }
 
 .legend-status {
   font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: .3rem;
+  margin: 1rem 0 .3rem 0;
 }
 
 .legend-from {
@@ -254,14 +284,13 @@ button:hover {
 }
 
 .known-for {
-  margin-bottom: .3rem;
   font-size: 1.5rem;
+  margin-bottom: .3rem;
 }
 
 .more-info {
   margin-top: .4rem;
 }
-
 
 .attachments {
   font-size: 1.5rem;
@@ -283,18 +312,24 @@ button:hover {
       "card-seven card-eight card-nine";
   }
 
-  .login-top {
-    background-image: url(images/your-picture.png);
-  }
-
   .card-nine {
     display: initial;
   }
 
-
+  .card-top-nine {
+    background-blend-mode: multiply;
+    background-color: #9e9e9e;
+    background-image: url(images/your-picture-here.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f7f4e9;
+    height: 18rem;
+    padding: 0;
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 852px) {
   .grid-wrapper {
     display: grid;
     grid-template-columns:  repeat(2, 50%);
@@ -307,11 +342,10 @@ button:hover {
   }
 
   .nav-bar {
-    margin-left: 4.1rem;
     width: 40%;
   }
 
-  .icon-share {
+  .share-icon {
     display: none;
   }
 
@@ -319,8 +353,15 @@ button:hover {
     color: transparent;
   }
 
-  .play-list img {
-    height: 6rem;
+  .play-list p {
+    display: none;
+  }
+
+  .play-list-button {
+    background-size: 5.5rem 5.5rem;
+    height: 5.5rem;
+    margin-left: 2.5rem;
+    width: 5.5rem;
   }
 
   .videos {
@@ -328,7 +369,17 @@ button:hover {
   }
 
   .title {
-    margin-right: 18rem;
+    font-size: 5rem;
+    margin-right: 1rem;
+  }
+
+  .title img {
+    height: 6rem;
+    margin-top: 2.6rem;
+  }
+
+  .title p {
+    margin-top: 5.3rem;
   }
 
   .card-nine {
@@ -337,11 +388,14 @@ button:hover {
 }
 
 @media screen and (max-width: 587px) {
+  .admin-username {
+    margin: .2rem 2.2rem 0 0;
+  }
+
   .grid-wrapper {
     display: grid;
     grid-template-columns:  repeat(1, 100%);
-    grid-auto-rows: 30rem;
-    /*grid-auto-rows: minmax(35rem, auto);*/
+    grid-auto-rows: 32rem;
     grid-template-areas: 
       "card-one"
       "card-two"
@@ -350,21 +404,77 @@ button:hover {
       "card-five"
       "card-six"
       "card-seven"
-      "card-eight";
+      "card-eight"
+      "card-nine";
+    margin:0 auto;
+    padding-left: 2.5rem;
   }
     
+  .title {
+    padding-right: 1rem;
+  }
+
+  .title p {
+    font-size: 3.9rem;
+    margin-top: 3rem;
+  }
+
+  .title img {
+    height: 5rem;
+    margin: .6rem 0 0 .8rem;
+  }
+
+.play-list-button {
+    background-size: 4.5rem 4.5rem;
+    height: 4.5rem;
+    margin: 1.5rem 0 0 1.4rem;
+    width: 4.5rem;
+  }
+
   .legend-status,
+  .legend-from,
+  .known-for,
   .more-info,
   .attachment-box,
   .attachment-number {
     display: none;
+  }
+  header {
+    height: 12rem;
   }
 
   .bottom-header {
     display: relative;
   }
 
-  .play-list img {
+  .nav-bar {
+    margin: 0 0 0 0;
+    width: 3rem;
+  }
+
+  .play-list p {
+    margin: 0;
+    width: 0;
+  }
+
+  .card-nine {
+    display: initial;
+  }
+
+   .shares {
+    height: 5rem;
+   }
+
+  h3 {
+    font-size: 3rem;
+    margin: 1.4rem 0 0 2.5rem;
+  }
+
+  .card-top-nine {
+    background-position: -2.1rem 0;
+  }
+
+  .url-box {
     margin-top: 0;
   }
 }
