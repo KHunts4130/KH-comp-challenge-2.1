@@ -33,21 +33,25 @@ button {
 .admin-username {
   color: #35B6FA;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   justify-content: space-between;
-  margin: .2rem 3.5rem 0 0;
-  width: 165px;
+  margin: .6rem 3.6rem 0 0;
+  width: 16.5rem;
+}
+
+.admin-username p {
+  margin-top: 1.1rem;
 }
 
 .admin-username img {
-  margin: .6rem 0 0 1rem;
+  margin: .6rem 0 0 0;
 }
 
 .admin-button {
   background-image: url(images/icon-sort-down-48.png);
   background-position: -.4rem -.4rem;
   height: 1.5rem;
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
 }
 
 button:hover {
@@ -60,25 +64,28 @@ button:hover {
 }
 
 .nav-bar {
-  color: #f7f4e9 ;
+  color: #f7f4e9;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-top: 3rem;
 }
 
 .share-icon {
   display: flex;
-  margin: 0 2rem 0 2.9rem;
+  margin: 0 3rem 0 2.9rem;
 }
 
 .share-icon-button {
-  background-image: url(images/icon-share-filled-50.png);
+  background-image: url(images/icon-shared-filled-50.png);
   background-position: .4rem .4rem;
   background-size: 2.5rem 2.5rem;
   height: 3.5rem;
-  margin-right: 1.3rem;
-  margin-top: .6rem;
+  margin: 1.6rem .5rem 0 0;
   width: 3.5rem;
+}
+
+.share-icon p {
+  margin-top: 2.4rem;
 }
 
 .play-list {
@@ -88,14 +95,14 @@ button:hover {
 
 .play-list p {
   color: #939393;
-  margin-left: 1rem;
+  margin: 2.4rem 0 0 0;
 }
 
 .play-list-button {
   background-image: url(images/icons-menu-40.png);
   background-size: 3.5rem 3.5rem;
   height: 3.5rem;
-  margin: .5rem 1.1rem 0 0;
+  margin: 1.5rem 1.1rem 0 0;
   width: 3.5rem;
 }
 
@@ -109,8 +116,12 @@ button:hover {
   background-image: url(images/icon-video-50.png);
   background-size: 3.5rem 3.5rem;
   height: 3.5rem;
-  margin: .2rem 1.1rem 0 0;
+  margin: 1.2rem 1.1rem 0 0;
   width: 3.5rem;
+}
+
+.videos p {
+  margin-top: 2.4rem;
 }
 
 .title {
@@ -216,7 +227,6 @@ button:hover {
   background-image: url(images/perry-Mervar.jpg)
 }
 
-
 .arrow-button {
   background-image: url(images/icon-arrow-50.png);
   background-position: .2rem -1rem;
@@ -241,6 +251,7 @@ button:hover {
 /*card information*/
 
 .card-body {
+  color: #595959;
   padding: 0 .8rem 0 1.5rem;
 }
 
@@ -250,7 +261,7 @@ button:hover {
 
 .date-time {
   color: #AAAAAA;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
 
@@ -280,6 +291,7 @@ button:hover {
 }
 
 .legend-from {
+  color: #939393;
   margin-top: .2rem;
 }
 
@@ -289,6 +301,7 @@ button:hover {
 }
 
 .more-info {
+  color: #939393;
   margin-top: .4rem;
 }
 
@@ -342,6 +355,7 @@ button:hover {
   }
 
   .nav-bar {
+    margin-top: 1.5rem;
     width: 40%;
   }
 
@@ -366,20 +380,6 @@ button:hover {
 
   .videos {
     display: none;
-  }
-
-  .title {
-    font-size: 5rem;
-    margin-right: 1rem;
-  }
-
-  .title img {
-    height: 6rem;
-    margin-top: 2.6rem;
-  }
-
-  .title p {
-    margin-top: 5.3rem;
   }
 
   .card-nine {
